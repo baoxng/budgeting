@@ -1,7 +1,7 @@
 # Budgeting 
 
 ## Project Description
-As a developer I want to make an expense tracker for users to track their spendings. I want the functionality of the application to allow user to track their money with or without wifi connection. This easy to use application allows a user to enter the name of a transaction and the amount of that transaction in relation to a banking deposit. 
+As a developer I want to make an expense tracker for users to track their spendings. I want the functionality of the application to allow user to track their money with or without wifi connection. This easy to use application allows a user to enter the name of a transaction and the amount of that transaction in relation to a banking deposit. Live application can be found on [here](https://the-budgeting.herokuapp.com/).
 
 ## User Story
 AS AN avid traveller
