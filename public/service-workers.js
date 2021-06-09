@@ -1,13 +1,15 @@
 const FILES_TO_CACHE = [
-    "/",
-    "/index.html",
-    "/index.js",
-    "/style.css"];
-
-
+    '/',
+    '/index.html',
+    '/manifest.webmanifest',
+    '/styles.css',
+    '/db.js',
+    '/index.js',
+    '/icons/icon-192x192.png',
+    '/icons/icon-512x512.png',];
 
 const STATIC_CACHE = "static-cache-v1";
-const RUNTIME_CACHE = "runtime-cache";
+const DATA_CACHE_NAME = "data-cache-v1";
 
 self.addEventListener("install", event => {
   event.waitUntil(
@@ -20,7 +22,7 @@ self.addEventListener("install", event => {
 
 // The activate handler takes care of cleaning up old caches.
 self.addEventListener("activate", event => {
-  const currentCaches = [STATIC_CACHE, RUNTIME_CACHE];
+  const currentCaches = [STATIC_CACHE, DATA_CACHE_NAME];
   event.waitUntil(
     caches
       .keys()
